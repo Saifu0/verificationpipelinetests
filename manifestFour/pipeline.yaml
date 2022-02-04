@@ -19,7 +19,7 @@ steps:
 - name: deploy_to_int
   application_path: testapp_int.yml
   tests:
-  - path: verifyendpoints.sh
+  - path: verifyendpoint.sh
     type: inject
     image: curlimages/curl:latest
     commands: [sh, -c, ./verifyendpoints.sh]
