@@ -13,14 +13,14 @@ steps:
     type: inject
     image: curlimages/curl:latest
     commands: [sh, -c, ./verifyendpoints.sh]
-    before: false
+    before: true
     variables:
       SERVICE_INTERNAL_URL: testapp.dev.svc.cluster.local
   - path: verifyendpoints.sh
     type: inject
     image: curlimages/curl:latest
     commands: [sh, -c, ./verifyendpoints.sh]
-    before: true
+    before: false
     variables:
       SERVICE_INTERNAL_URL: testapp.dev.svc.cluster.local
 - name: deploy_to_int
