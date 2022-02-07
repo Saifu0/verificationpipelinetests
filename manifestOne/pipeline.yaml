@@ -1,4 +1,4 @@
-name: demo_pipeline
+name: demo_pipeline_1
 argo_version_lock: true
 #cluster_name at the pipeline level means that every step in the pipeline will deploy to cluster_local.
 #If cluster_name is also defined at a particular step, it will override the cluster_name set at the pipeline
