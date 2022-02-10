@@ -7,7 +7,7 @@ steps:
   application_path: testapp_dev.yml
   tests:
   - path: verifyendpoints.sh
-    type: inject
+    type: none
     image: curlimages/curl:latest
     commands: [sh, -c, ./verifyendpoints.sh]
     before: false
