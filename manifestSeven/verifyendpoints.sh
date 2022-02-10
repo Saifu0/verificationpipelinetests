@@ -1,6 +1,6 @@
 #!/bin/sh
 # apk --no-cache add curl
-sleep 10
+sleepx 10
 for i in 1 2 3 4 5
 do
    echo $SERVICE_INTERNAL_URL
