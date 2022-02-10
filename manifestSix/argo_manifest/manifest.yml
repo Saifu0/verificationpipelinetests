@@ -16,7 +16,7 @@ spec:
       containers:
       - image: 
         name: testapp
-        imagePullPolicy: Always
+        imagePullPolicy: Alwa
         ports:
         - containerPort: 5000
 ---
