@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/GreenOpsInc/atlasexamples.git
+    repoURL: https://github.com/Saifu0/verificationpipelinetests.git
     targetRevision: main
-    path: basic/argo_manifest
+    path: manifestSix/argo_manifest
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
