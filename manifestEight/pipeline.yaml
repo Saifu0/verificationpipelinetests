@@ -1,6 +1,7 @@
 # this one have incorrect dependencies name and missing cluster_name
 name: demo_pipeline_8
 argo_version_lock: true
+cluster_name: in-cluster
 steps:
 - name: deploy_to_dev
   application_path: testapp_dev.yml
