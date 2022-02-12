@@ -1,12 +1,14 @@
-# there is a syntax error in verifyendpoints.sh
-name: demo_pipeline_7
+# here, rollback_limit = 0
+name: demo_pipeline_11
 argo_version_lock: true
 cluster_name: in-cluster
 steps:
 - name: deploy_to_dev
+  #This is the path of the ArgoCD Application file
   application_path: testapp_dev.yml
   tests:
   - path: verifyendpoints.sh
+    rollback_limit: 1
     type: inject
     image: curlimages/curl:latest
     commands: [sh, -c, ./verifyendpoints.sh]
@@ -23,5 +25,6 @@ steps:
     before: false
     variables:
       SERVICE_INTERNAL_URL: testapp.int.svc.cluster.local
+  #The schema is DAG based, allowing both linear and complex pipelines
   dependencies:
   - deploy_to_dev

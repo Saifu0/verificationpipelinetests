@@ -1,9 +1,10 @@
-# there is a syntax error in verifyendpoints.sh
-name: demo_pipeline_7
+# this one have exit 1 in verifyendpoints.sh to raise Test failed
+name: demo_pipeline_9
 argo_version_lock: true
 cluster_name: in-cluster
 steps:
 - name: deploy_to_dev
+  #This is the path of the ArgoCD Application file
   application_path: testapp_dev.yml
   tests:
   - path: verifyendpoints.sh
@@ -23,5 +24,6 @@ steps:
     before: false
     variables:
       SERVICE_INTERNAL_URL: testapp.int.svc.cluster.local
+  #The schema is DAG based, allowing both linear and complex pipelines
   dependencies:
   - deploy_to_dev
