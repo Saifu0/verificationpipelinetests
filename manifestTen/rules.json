@@ -15,7 +15,7 @@
                         "step": "deploy_to_dev",
                         "deploymentFailed": false,
                         "brokenTest": "POPULATED",
-                        "brokenTestLog": "Pod name: 0-67e87208-3b03-49dc-ab22-f75d85f064f5--1-2lqrk\n----------\n\n----------\nPod name: 0-67e87208-3b03-49dc-ab22-f75d85f064f5--1-2zssp\n----------\n\ncurl: (3) URL using bad/illegal format or missing URL\nDid not return correctly.\n"
+                        "brokenTestLog": "POPULATED"
                     }
                 ]
             },
@@ -29,8 +29,8 @@
                 "argoApplicationName": "atlastestapp-dev",
                 "argoRevisionHash": "994a6c9f2b25aa3fec84f823366d53f61898bd71",
                 "gitCommitVersion": "2e74eb2947784af22fb92a102518f557707165c0",
-                "brokenTest": "0-67e87208-3b03-49dc-ab22-f75d85f064f5",
-                "brokenTestLog": "Pod name: 0-67e87208-3b03-49dc-ab22-f75d85f064f5--1-2lqrk\n----------\n\n----------\nPod name: 0-67e87208-3b03-49dc-ab22-f75d85f064f5--1-2zssp\n----------\n\ncurl: (3) URL using bad/illegal format or missing URL\nDid not return correctly.\n"
+                "brokenTest": "POPULATED",
+                "brokenTestLog": "POPULATED"
             }
         }
     ]
