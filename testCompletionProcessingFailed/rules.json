@@ -1,5 +1,37 @@
 {
     "gitRepoUrl": "https://github.com/Saifu0/verificationpipelinetests.git",
     "pathToRoot": "testCompletionProcessingFailed/",
-    "rules": []
+    "rules": [
+        {
+            "stepName": "deploy_to_dev",
+            "eventType": "TestCompletionEvent",
+            "pipelineStatus": {
+                "progressingSteps": [],
+                "stable": false,
+                "complete": false,
+                "cancelled": false,
+                "failedSteps": [
+                    {
+                        "step": "deploy_to_dev",
+                        "deploymentFailed": false,
+                        "brokenTest": "POPULATED",
+                        "brokenTestLog": "POPULATED"
+                    }
+                ]
+            },
+            "stepStatus": {
+                "type": "deployment",
+                "pipelineUniqueVersionNumber": "330b7f77-4a8f-4930-92fd-4931c4a3d506",
+                "rollbackUniqueVersionNumber": "",
+                "uniqueVersionInstance": 0,
+                "status": "FAILURE",
+                "deploymentComplete": true,
+                "argoApplicationName": "atlastestapp-dev",
+                "argoRevisionHash": "994a6c9f2b25aa3fec84f823366d53f61898bd71",
+                "gitCommitVersion": "d7150bd5f0d4a9ff62e99e2cf02728916f781a7a",
+                "brokenTest": "POPULATED",
+                "brokenTestLog": "POPULATED"
+            }
+        }
+    ]
 }
