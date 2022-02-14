@@ -1,6 +1,6 @@
 {
     "gitRepoUrl": "https://github.com/Saifu0/verificationpipelinetests.git",
-    "pathToRoot": "manifestTen/",
+    "pathToRoot": "withRollbacks/",
     "rules": [
         {
             "stepName": "deploy_to_dev",
@@ -21,10 +21,10 @@
             },
             "stepStatus": {
                 "type": "deployment",
-                "pipelineUniqueVersionNumber": "d9ad5e32-a1f1-4929-8856-8ca5ee2c26cd",
+                "pipelineUniqueVersionNumber": "0c71cedd-8f8c-4be1-9f47-69dab251b032",
                 "rollbackUniqueVersionNumber": "",
                 "uniqueVersionInstance": 0,
-                "status": "SUCCESS",
+                "status": "FAILURE",
                 "deploymentComplete": true,
                 "argoApplicationName": "atlastestapp-dev",
                 "argoRevisionHash": "994a6c9f2b25aa3fec84f823366d53f61898bd71",

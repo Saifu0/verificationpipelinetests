@@ -1,4 +1,4 @@
-# this one have incorrect dependencies name and missing cluster_name
+# this one have incorrect dependencies name
 # in this case, events of deploy_to_int will not receive
 name: demo_pipeline_8
 argo_version_lock: true

@@ -1,8 +1,6 @@
-name: demo_pipeline_4
+# simple linear pipeline with two steps
+name: demo_pipeline_1
 argo_version_lock: true
-#cluster_name at the pipeline level means that every step in the pipeline will deploy to cluster_local.
-#If cluster_name is also defined at a particular step, it will override the cluster_name set at the pipeline
-#(only for that step).
 cluster_name: in-cluster
 steps:
 - name: deploy_to_dev
@@ -19,7 +17,7 @@ steps:
 - name: deploy_to_int
   application_path: testapp_int.yml
   tests:
-  - path: verifyendpoint.sh # should through error
+  - path: verifyendpoints.sh
     type: inject
     image: curlimages/curl:latest
     commands: [sh, -c, ./verifyendpoints.sh]

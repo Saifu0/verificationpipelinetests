@@ -1,14 +1,18 @@
-name: demo_pipeline_2
+name: demo_pipeline_3
 argo_version_lock: true
-#cluster_name at the pipeline level means that every step in the pipeline will deploy to cluster_local.
-#If cluster_name is also defined at a particular step, it will override the cluster_name set at the pipeline
-#(only for that step).
 cluster_name: in-cluster
 steps:
 - name: deploy_to_dev
   #This is the path of the ArgoCD Application file
   application_path: testapp_dev.yml
   tests:
+  - path: verifyendpoints.sh
+    type: inject
+    image: curlimages/curl:latest
+    commands: [sh, -c, ./verifyendpoints.sh]
+    before: true
+    variables:
+      SERVICE_INTERNAL_URL: testapp.dev.svc.cluster.local
   - path: verifyendpoints.sh
     type: inject
     image: curlimages/curl:latest
