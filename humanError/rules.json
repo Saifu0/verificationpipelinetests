@@ -4,7 +4,7 @@
     "rules": [
         {
             "stepName": "deploy_to_dev",
-            "eventType": "ApplicationInfraTriggerEvent",
+            "eventType": "TriggerStepEvent",
             "pipelineStatus": {
                 "progressingSteps": [
                     "deploy_to_dev"
@@ -29,7 +29,7 @@
         },
         {
             "stepName": "deploy_to_int",
-            "eventType": "PipelineCompletionEvent",
+            "eventType": "FailureEvent",
             "pipelineStatus": {
                 "progressingSteps": [],
                 "stable": false,
