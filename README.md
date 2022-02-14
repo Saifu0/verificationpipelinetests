@@ -38,15 +38,18 @@ This manifests contains pipeline with two linear steps `deploy_to_dev` and `depl
 ### 6. testCompletionFailedDueToTypo
 This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. In the `verifyendpoints.sh`, there is a typo in line 7 & 8. It is tends to fail at `TestCompletionEvent` of `deploy_to_dev`.
 
+Expect rules are also defined for this manifest.
+
 ### 7. testCompletionProcessingFailed
 This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. In the `verifyendpoints.sh`, we are returning `exit 1` to fail a test processing and raise a `TestCompletonEvent`. 
 
+Expect rules are also defined for this manifest.
 
 ### 8. noDeployments
 This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. In both the step, we have removed the deployment step. 
 It should fail at `TestCompletionEvent`
 
-Expect rules are also defined for this manifest.
+Expect rules are also defined for this manifest. Expected step status should fail, `status: SUCCESS` should be `status: FAILURE`.
 
 ### 9. incorrectDependencies
 This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. In the dependencies list of `deploy_to_int`, the step name is wrong and because of this, events of `deploy_to_int` will not received. 

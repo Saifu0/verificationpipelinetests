@@ -21,7 +21,7 @@
             },
             "stepStatus": {
                 "type": "deployment",
-                "pipelineUniqueVersionNumber": "f9ad4acf-0f9a-42a7-a742-b7852067b4f9",
+                "pipelineUniqueVersionNumber": "POPULATED",
                 "rollbackUniqueVersionNumber": "",
                 "uniqueVersionInstance": 0,
                 "status": "FAILURE",
