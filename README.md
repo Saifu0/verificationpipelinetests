@@ -44,8 +44,9 @@ This manifests contains pipeline with two linear steps `deploy_to_dev` and `depl
 
 ### 8. noDeployments
 This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. In both the step, we have removed the deployment step. 
+It should fail at `TestCompletionEvent`
 
-It should run successfully and pass all verifications.
+Expect rules are also defined for this manifest.
 
 ### 9. incorrectDependencies
 This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. In the dependencies list of `deploy_to_int`, the step name is wrong and because of this, events of `deploy_to_int` will not received. 
@@ -53,10 +54,10 @@ This manifests contains pipeline with two linear steps `deploy_to_dev` and `depl
 ### 10. clientCompletionFailed
 This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. In the `argo_manifest/manifest.yaml`, we have removed `image` name. It is tends to fail at `ClientCompletionEvent`.
 
-Expected rules are also defined for this manifests.
+Expected rules are also defined for this manifest.
 
 ### 11. withRollBacks
 This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. In step `deploy_to_dev`, `rollback_limit` is set to 1 and there is a bug in `verifyendpoints.sh` which will cause `TestCompletionEvent` failed and it will rollback and we will receive `TriggerStepEvent` of `deploy_to_dev` with failedStep populated after `PipelineCompletionEvent`.
 
-Expected rules are also defined for this manifests.
+Expected rules are also defined for this manifest.
 
