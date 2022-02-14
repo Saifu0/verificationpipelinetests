@@ -26,7 +26,7 @@ steps:
   #The schema is DAG based, allowing both linear and complex pipelines
   dependencies:
   - deploy_to_dev
-- name: deploy_to_saif
+- name: deploy_to_prod
   #This is the path of the ArgoCD Application file
   application_path: testapp_dev.yml
   tests:
@@ -59,4 +59,4 @@ steps:
       SERVICE_INTERNAL_URL: testapp.dev.svc.cluster.local
   dependencies:
   - deploy_to_int
-  - deploy_to_saif
+  - deploy_to_prod
