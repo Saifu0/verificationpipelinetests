@@ -19,19 +19,21 @@
                     }
                 ]
             },
-            "stepStatus": {
-                "type": "deployment",
-                "pipelineUniqueVersionNumber": "0c71cedd-8f8c-4be1-9f47-69dab251b032",
-                "rollbackUniqueVersionNumber": "",
-                "uniqueVersionInstance": 0,
-                "status": "FAILURE",
-                "deploymentComplete": true,
-                "argoApplicationName": "atlastestapp-dev",
-                "argoRevisionHash": "994a6c9f2b25aa3fec84f823366d53f61898bd71",
-                "gitCommitVersion": "2e74eb2947784af22fb92a102518f557707165c0",
-                "brokenTest": "POPULATED",
-                "brokenTestLog": "POPULATED"
-            }
+            "stepStatus": [
+                {
+                    "type": "deployment",
+                    "pipelineUniqueVersionNumber": "0c71cedd-8f8c-4be1-9f47-69dab251b032",
+                    "rollbackUniqueVersionNumber": "",
+                    "uniqueVersionInstance": 0,
+                    "status": "FAILURE",
+                    "deploymentComplete": true,
+                    "argoApplicationName": "atlastestapp-dev",
+                    "argoRevisionHash": "994a6c9f2b25aa3fec84f823366d53f61898bd71",
+                    "gitCommitVersion": "2e74eb2947784af22fb92a102518f557707165c0",
+                    "brokenTest": "POPULATED",
+                    "brokenTestLog": "POPULATED"
+                }
+            ]
         }
     ]
 }

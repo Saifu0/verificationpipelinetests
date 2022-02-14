@@ -13,19 +13,21 @@
                 "cancelled": false,
                 "failedSteps": []
             },
-            "stepStatus": {
-                "type": "deployment",
-                "pipelineUniqueVersionNumber": "POPULATED",
-                "rollbackUniqueVersionNumber": "",
-                "uniqueVersionInstance": 0,
-                "status": "PROGRESSING",
-                "deploymentComplete": false,
-                "argoApplicationName": "",
-                "argoRevisionHash": "",
-                "gitCommitVersion": "POPULATED",
-                "brokenTest": "",
-                "brokenTestLog": ""
-            }
+            "stepStatus": [
+                {
+                    "type": "deployment",
+                    "pipelineUniqueVersionNumber": "POPULATED",
+                    "rollbackUniqueVersionNumber": "",
+                    "uniqueVersionInstance": 0,
+                    "status": "PROGRESSING",
+                    "deploymentComplete": false,
+                    "argoApplicationName": "",
+                    "argoRevisionHash": "",
+                    "gitCommitVersion": "POPULATED",
+                    "brokenTest": "",
+                    "brokenTestLog": ""
+                }
+            ]
         },
         {
             "stepName": "deploy_to_int",
