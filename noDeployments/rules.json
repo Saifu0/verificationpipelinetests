@@ -21,14 +21,14 @@
             },
             "stepStatus": {
                 "type": "deployment",
-                "pipelineUniqueVersionNumber": "d9ad5e32-a1f1-4929-8856-8ca5ee2c26cd",
+                "pipelineUniqueVersionNumber": "POPULATED",
                 "rollbackUniqueVersionNumber": "",
                 "uniqueVersionInstance": 0,
                 "status": "SUCCESS",
                 "deploymentComplete": true,
                 "argoApplicationName": "atlastestapp-dev",
-                "argoRevisionHash": "994a6c9f2b25aa3fec84f823366d53f61898bd71",
-                "gitCommitVersion": "2e74eb2947784af22fb92a102518f557707165c0",
+                "argoRevisionHash": "POPULATED",
+                "gitCommitVersion": "POPULATED",
                 "brokenTest": "POPULATED",
                 "brokenTestLog": "POPULATED"
             }

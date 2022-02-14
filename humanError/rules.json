@@ -15,14 +15,14 @@
             },
             "stepStatus": {
                 "type": "deployment",
-                "pipelineUniqueVersionNumber": "185994f8-3e51-41e0-b534-febc9ab091a5",
+                "pipelineUniqueVersionNumber": "POPULATED",
                 "rollbackUniqueVersionNumber": "",
                 "uniqueVersionInstance": 0,
                 "status": "PROGRESSING",
                 "deploymentComplete": false,
                 "argoApplicationName": "",
                 "argoRevisionHash": "",
-                "gitCommitVersion": "994a6c9f2b25aa3fec84f823366d53f61898bd71",
+                "gitCommitVersion": "POPULATED",
                 "brokenTest": "",
                 "brokenTestLog": ""
             }
