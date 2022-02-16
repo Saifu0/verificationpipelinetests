@@ -25,13 +25,26 @@
                     "pipelineUniqueVersionNumber": "POPULATED",
                     "rollbackUniqueVersionNumber": "",
                     "uniqueVersionInstance": 0,
-                    "status": "FAILURE",
+                    "status": "PROGRESSING",
                     "deploymentComplete": true,
                     "argoApplicationName": "atlastestapp-dev",
                     "argoRevisionHash": "POPULATED",
                     "gitCommitVersion": "POPULATED",
-                    "brokenTest": "POPULATED",
-                    "brokenTestLog": "POPULATED"
+                    "brokenTest": "",
+                    "brokenTestLog": ""
+                },
+                {
+                    "type": "deployment",
+                    "pipelineUniqueVersionNumber": "POPULATED",
+                    "rollbackUniqueVersionNumber": "",
+                    "uniqueVersionInstance": 0,
+                    "status": "SUCCESS",
+                    "deploymentComplete": true,
+                    "argoApplicationName": "atlastestapp-dev",
+                    "argoRevisionHash": "POPULATED",
+                    "gitCommitVersion": "POPULATED",
+                    "brokenTest": "",
+                    "brokenTestLog": ""
                 }
             ]
         }
