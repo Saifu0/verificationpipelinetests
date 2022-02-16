@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Saifu0/verificationpipelinetests.git
     targetRevision: main
-    path: withRollbacks/argo_manifest
+    path: withRollbacksType1/failedWithRollbacks0/argo_manifest
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
