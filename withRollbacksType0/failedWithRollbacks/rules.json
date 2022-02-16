@@ -1,6 +1,6 @@
 {
     "gitRepoUrl": "https://github.com/Saifu0/verificationpipelinetests.git",
-    "pathToRoot": "withRollbacksType2/failedWithNoRollbacks/",
+    "pathToRoot": "withRollbacksType0/failedWithRollbacks/",
     "rules": [
         {
             "stepName": "deploy_to_dev",

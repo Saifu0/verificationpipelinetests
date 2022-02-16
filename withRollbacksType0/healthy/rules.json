@@ -1,5 +1,5 @@
 {
     "gitRepoUrl": "https://github.com/Saifu0/verificationpipelinetests.git",
-    "pathToRoot": "withRollbacksType2/healthy/",
+    "pathToRoot": "withRollbacksType0/healthy/",
     "rules": []
 }
