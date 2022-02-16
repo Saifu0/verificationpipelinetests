@@ -30,6 +30,19 @@
                     "argoApplicationName": "atlastestapp-dev",
                     "argoRevisionHash": "POPULATED",
                     "gitCommitVersion": "POPULATED",
+                    "brokenTest": "POPULATED5",
+                    "brokenTestLog": "POPULATED"
+                },
+                {
+                    "type": "deployment",
+                    "pipelineUniqueVersionNumber": "POPULATED",
+                    "rollbackUniqueVersionNumber": "",
+                    "uniqueVersionInstance": 0,
+                    "status": "FAILURE",
+                    "deploymentComplete": true,
+                    "argoApplicationName": "atlastestapp-dev",
+                    "argoRevisionHash": "POPULATED",
+                    "gitCommitVersion": "POPULATED",
                     "brokenTest": "POPULATED",
                     "brokenTestLog": "POPULATED"
                 }
