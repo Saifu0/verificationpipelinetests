@@ -6,6 +6,7 @@ steps:
 - name: deploy_to_dev
   #This is the path of the ArgoCD Application file
   application_path: testapp_dev.yml
+  rollback_limit: 1
   tests:
   - path: verifyendpoints.sh
     type: inject
