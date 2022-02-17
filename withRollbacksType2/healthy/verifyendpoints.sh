@@ -11,4 +11,5 @@ do
    fi
    sleep 1
 done
+exit 1
 echo "Test completed correctly."
