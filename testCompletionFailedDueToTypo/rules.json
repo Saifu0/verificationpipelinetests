@@ -1,39 +1,35 @@
-{
-    "gitRepoUrl": "https://github.com/Saifu0/verificationpipelinetests.git",
-    "pathToRoot": "testCompletionFailedDueToTypo/",
-    "rules": [
-        {
-            "stepName": "deploy_to_dev",
-            "eventType": "TestCompletionEvent",
-            "pipelineStatus": {
-                "progressingSteps": [],
-                "stable": false,
-                "complete": false,
-                "cancelled": false,
-                "failedSteps": [
-                    {
-                        "step": "deploy_to_dev",
-                        "deploymentFailed": false,
-                        "brokenTest": "POPULATED",
-                        "brokenTestLog": "POPULATED"
-                    }
-                ]
-            },
-            "stepStatus": [
+[
+    {
+        "stepName": "deploy_to_dev",
+        "eventType": "TestCompletionEvent",
+        "pipelineStatus": {
+            "progressingSteps": [],
+            "stable": false,
+            "complete": false,
+            "cancelled": false,
+            "failedSteps": [
                 {
-                    "type": "deployment",
-                    "pipelineUniqueVersionNumber": "POPULATED",
-                    "rollbackUniqueVersionNumber": "",
-                    "uniqueVersionInstance": 0,
-                    "status": "FAILURE",
-                    "deploymentComplete": true,
-                    "argoApplicationName": "atlastestapp-dev",
-                    "argoRevisionHash": "POPULATED",
-                    "gitCommitVersion": "POPULATED",
+                    "step": "deploy_to_dev",
+                    "deploymentFailed": false,
                     "brokenTest": "POPULATED",
                     "brokenTestLog": "POPULATED"
                 }
             ]
-        }
-    ]
-}
+        },
+        "stepStatus": [
+            {
+                "type": "deployment",
+                "pipelineUniqueVersionNumber": "POPULATED",
+                "rollbackUniqueVersionNumber": "",
+                "uniqueVersionInstance": 0,
+                "status": "FAILURE",
+                "deploymentComplete": true,
+                "argoApplicationName": "atlastestapp-dev",
+                "argoRevisionHash": "POPULATED",
+                "gitCommitVersion": "POPULATED",
+                "brokenTest": "POPULATED",
+                "brokenTestLog": "POPULATED"
+            }
+        ]
+    }
+]
