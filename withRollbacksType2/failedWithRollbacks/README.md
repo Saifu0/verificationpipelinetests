@@ -1,6 +1,6 @@
-# withRollBacks
-This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. In step `deploy_to_dev`, `rollback_limit` is set to 1 and there is a bug in `verifyendpoints.sh` which will cause `TestCompletionEvent` failed and it will rollback to `healthy` manifest.
-
-Expected rules are also defined for this manifest.
-
-
+IyB3aXRoUm9sbEJhY2tzClRoaXMgbWFuaWZlc3RzIGNvbnRhaW5zIHBpcGVs
+aW5lIHdpdGggdHdvIGxpbmVhciBzdGVwcyBgZGVwbG95X3RvX2RldmAgYW5k
+IGBkZXBsb3lfdG9faW50YC4gVGhpcyBtYW5pZmVzdCBpcyBlcnJvciBmcmVl
+IGFuZCBoZW5jZSBpdCBzaG91bGQgcnVuIHN1Y2Nlc3NmdWxseSB3aXRob3V0
+IGFueSBmYWlsZWQgZXZlbnQuCgpFeHBlY3RlZCBydWxlcyBhcmUgYWxzbyBk
+ZWZpbmVkIGZvciB0aGlzIG1hbmlmZXN0LgoKCg==

@@ -1,14 +1,9 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: atlastestapp-dev
-  namespace: argocd
-spec:
-  project: default
-  source:
-    repoURL: https://github.com/Saifu0/verificationpipelinetests.git
-    targetRevision: main
-    path: withRollbacksType2/failedWithRollbacks/argo_manifest
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: dev
+YXBpVmVyc2lvbjogYXJnb3Byb2ouaW8vdjFhbHBoYTEKa2luZDogQXBwbGlj
+YXRpb24KbWV0YWRhdGE6CiAgbmFtZTogYXRsYXN0ZXN0YXBwLWRldgogIG5h
+bWVzcGFjZTogYXJnb2NkCnNwZWM6CiAgcHJvamVjdDogZGVmYXVsdAogIHNv
+dXJjZToKICAgIHJlcG9VUkw6IGh0dHBzOi8vZ2l0aHViLmNvbS9TYWlmdTAv
+dmVyaWZpY2F0aW9ucGlwZWxpbmV0ZXN0cy5naXQKICAgIHRhcmdldFJldmlz
+aW9uOiBtYWluCiAgICBwYXRoOiB3aXRoUm9sbGJhY2tzVHlwZTIvaGVhbHRo
+eS9hcmdvX21hbmlmZXN0CiAgZGVzdGluYXRpb246CiAgICBzZXJ2ZXI6IGh0
+dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2YwogICAgbmFtZXNwYWNlOiBk
+ZXYK
