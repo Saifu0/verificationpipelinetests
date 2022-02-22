@@ -1,4 +1,5 @@
 import os
+from pydoc import cli
 import click
 import requests
 import json
@@ -145,7 +146,3 @@ def copy(owner, repo, src, dest):
     token = os.getenv('GITHUB_ACCESS_TOKEN')
     create_commit(token, owner, repo, src, dest)
     print(f"SUCCESS, files copied from {src} to {dest}")
-
-
-if __name__ == "__main__":
-    main()
