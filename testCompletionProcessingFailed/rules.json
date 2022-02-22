@@ -22,7 +22,7 @@
                 "pipelineUniqueVersionNumber": "POPULATED",
                 "rollbackUniqueVersionNumber": "",
                 "uniqueVersionInstance": 0,
-                "status": "FAILURE",
+                "status": "SUCCESS",
                 "deploymentComplete": true,
                 "argoApplicationName": "atlastestapp-dev",
                 "argoRevisionHash": "POPULATED",
