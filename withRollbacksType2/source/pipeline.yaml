@@ -1,4 +1,4 @@
-# here,  a syntax error in verifyendpoints.sh, and rollback_limit=1
+# here, no error. 
 name: demo_pipeline_11
 argo_version_lock: true
 cluster_name: in-cluster
