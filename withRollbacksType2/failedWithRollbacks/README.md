@@ -1,1 +1,6 @@
-IyB3aXRoUm9sbEJhY2tzClRoaXMgbWFuaWZlc3RzIGNvbnRhaW5zIHBpcGVsaW5lIHdpdGggdHdvIGxpbmVhciBzdGVwcyBgZGVwbG95X3RvX2RldmAgYW5kIGBkZXBsb3lfdG9faW50YC4gVGhpcyBtYW5pZmVzdCBpcyBlcnJvciBmcmVlIGFuZCBoZW5jZSBpdCBzaG91bGQgcnVuIHN1Y2Nlc3NmdWxseSB3aXRob3V0IGFueSBmYWlsZWQgZXZlbnQuCgpFeHBlY3RlZCBydWxlcyBhcmUgYWxzbyBkZWZpbmVkIGZvciB0aGlzIG1hbmlmZXN0LgoKCg==
+# withRollBacks
+This manifests contains pipeline with two linear steps `deploy_to_dev` and `deploy_to_int`. This manifest is error free and hence it should run successfully without any failed event.
+
+Expected rules are also defined for this manifest.
+
+

@@ -1,1 +1,14 @@
-YXBpVmVyc2lvbjogYXJnb3Byb2ouaW8vdjFhbHBoYTEKa2luZDogQXBwbGljYXRpb24KbWV0YWRhdGE6CiAgbmFtZTogYXRsYXN0ZXN0YXBwLWRldgogIG5hbWVzcGFjZTogYXJnb2NkCnNwZWM6CiAgcHJvamVjdDogZGVmYXVsdAogIHNvdXJjZToKICAgIHJlcG9VUkw6IGh0dHBzOi8vZ2l0aHViLmNvbS9TYWlmdTAvdmVyaWZpY2F0aW9ucGlwZWxpbmV0ZXN0cy5naXQKICAgIHRhcmdldFJldmlzaW9uOiBtYWluCiAgICBwYXRoOiB3aXRoUm9sbGJhY2tzVHlwZTIvaGVhbHRoeS9hcmdvX21hbmlmZXN0CiAgZGVzdGluYXRpb246CiAgICBzZXJ2ZXI6IGh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2YwogICAgbmFtZXNwYWNlOiBkZXYK
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: atlastestapp-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Saifu0/verificationpipelinetests.git
+    targetRevision: main
+    path: withRollbacksType2/healthy/argo_manifest
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
